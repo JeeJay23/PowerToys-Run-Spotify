@@ -1,4 +1,4 @@
-using Wox.Plugin;
+﻿using Wox.Plugin;
 using System.Windows.Controls;
 using Microsoft.PowerToys.Settings.UI.Library;
 using System.Windows.Media.Imaging;
@@ -499,6 +499,24 @@ public class Main : IPlugin, IContextMenu, ISettingProvider
             case ResultType.Album:
             case ResultType.Artist:
             case ResultType.Playlist:
+            case ResultType.AddToLikes:
+                results.Add(new ContextMenuResult
+                {
+                    Title = Resources.ContextMenuResultAddToLikedSongs,
+                    Glyph = "\xF8AA",
+                    FontFamily = "Segoe MDL2 Assets",
+                    AcceleratorKey = Key.Enter,
+                    AcceleratorModifiers = ModifierKeys.Shift
+                    // Action = context =>
+                    // {
+                    //     _ = EnsureActiveDevice(
+                    //         async (player, request) => await _spotifyClient.Library.SaveTracks(new LibrarySaveTracksRequest(new[] {request}))),
+                    //         new PlayerAddToQueueRequest(data.Uri)
+                    //     );
+                    //     return true;
+                    // },
+                });
+                break;
             default:
                 break;
         }

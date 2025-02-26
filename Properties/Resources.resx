@@ -143,4 +143,8 @@
         <value>Add to queue (Shift+Enter)</value>
     </data>
 
+    <data name="ContextMenuResultAddToLikedSongs" xml:space="preserve">
+        <value>Add to liked songs (Shift+Enter)</value>
+    </data>
+
 </root>

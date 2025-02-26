@@ -11,5 +11,6 @@ public enum ResultType
     Song,
     Album,
     Artist,
-    Playlist
+    Playlist,
+    AddToLikes
 }
