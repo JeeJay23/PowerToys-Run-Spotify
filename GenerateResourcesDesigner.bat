@@ -1,2 +1,2 @@
  cd "%~dp0\Properties"
- resgen Resources.resx PowerToys_Run_Spotify.Properties.Resources.resources /str:CSharp,PowerToys_Run_Spotify.Properties,Resources,Resources.Designer.cs
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\ResGen.exe" Resources.resx PowerToys_Run_Spotify.Properties.Resources.resources /str:CSharp,PowerToys_Run_Spotify.Properties,Resources,Resources.Designer.cs
